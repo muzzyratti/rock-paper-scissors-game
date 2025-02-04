@@ -1,6 +1,6 @@
 
 
-// Get random Computer Side Choice
+// Get random Computer Choice
 let computerChoice = "";
 
 function getComputerChoice(max) {
@@ -21,14 +21,26 @@ function getComputerChoice(max) {
     }
   }
 
-console.log(getComputerChoice(3));
+getComputerChoice(3);
 
-// Ask user for Human Side Choice
+console.log(`Computer choice: ${computerChoice}`);
+
+// Ask user for Human Choice
+let humanChoice = "";
 
 function getHumanChoice () {
-       //code 
+    humanChoice = prompt("What is your choice? (choose only from: rock, paper or scissors)").toLowerCase();
+
+    if (humanChoice === 'rock'|| humanChoice === 'paper'|| humanChoice === 'rock') {
+        return humanChoice = String(humanChoice).charAt(0).toUpperCase() + String(humanChoice).slice(1);
+    } else {
+        alert ("Please choose only from: rock, paper or scissors.");
+        getHumanChoice();
+    }
 }
 
+getHumanChoice();
+console.log(`Human choice: ${humanChoice}`);
 
 // Calculate result
 
