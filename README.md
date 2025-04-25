@@ -2,7 +2,7 @@
 
 This is a simple console Rock-Paper-Scissors game to play with computer with a js logic and DOM manipulations for game UI.
 
-The code structure:
+**The code structure:**
 Determining the player's points
 Determine computer points
 Determine round number
@@ -13,22 +13,23 @@ Then see what is the number of the round (function)
 
 If < 5:
 
-	Call computer selection (function)
-	Call round results determination (function)
-		Compare player and computer selections and return result text 
-	Update points depending on the result (function)
-		If the player wins - increase the player's points
-		If comp - comp
-	Display round results
-	Update the total score
+Call computer selection (function)
+Call round results determination (function)
+	Compare player and computer selections and return result text 
+Update points depending on the result (function)
+	If the player wins - increase the player's points
+	If comp - comp
+Display round results
+Update the total score
 
 If >= 5:
-	Call end of game (function)
-		Write who won
-		Disable previous buttons
-		Add Play Again button
-		Call game restart if you clicked Play Again (function)
-			Zero the results
-			Update scores and rounds
-			Enable buttons
-            Again listening for click any button
+
+Call end of game (function)
+	Write who won
+	Disable previous buttons
+	Add Play Again button
+	Call game restart if you clicked Play Again (function)
+		Zero the results
+		Update scores and rounds
+		Enable buttons
+         Again listening for click any button
